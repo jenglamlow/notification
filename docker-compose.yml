@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: notification_service
+    ports:
+      - '3001:3000'
+    depends_on:
+      - mongo
+    env_file:
+      - .env
+    volumes:
+      - .:/usr/src/app
+    command: pnpm run start:dev
+
+  mongo:
+    image: mongo:8.0
+    container_name: mongo_db
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
