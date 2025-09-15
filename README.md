@@ -65,7 +65,7 @@ The core logic of the `NotificationService` and `TemplateService` is unit-tested
 docker compose exec api pnpm test
 ```
 
-This command runs the `test` script defined in `package.json` inside the running `app` container.
+This command runs the `test` script defined in `package.json` inside the running `api` container.
 
 ---
 
