@@ -70,6 +70,9 @@ devDependencies:
   '@types/supertest':
     specifier: ^6.0.2
     version: 6.0.3
+  '@unrs/resolver-binding-linux-arm64-musl':
+    specifier: ^1.11.1
+    version: 1.11.1
   eslint:
     specifier: ^9.18.0
     version: 9.35.0
@@ -1931,7 +1934,6 @@ packages:
     os: [linux]
     requiresBuild: true
     dev: true
-    optional: true
 
   /@unrs/resolver-binding-linux-ppc64-gnu@1.11.1:
     resolution: {integrity: sha512-D8Vae74A4/a+mZH0FbOkFJL9DSK2R6TFPC9M+jCWYia/q2einCubX10pecpDiTmkJVUH+y8K3BZClycD8nCShA==}
