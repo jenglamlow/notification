@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: notification_service
     ports:
-      - '3000:3000'
+      - '${PORT}:${PORT}'
     depends_on:
       - mongo
     env_file:
